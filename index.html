@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Noodle — Higher Education Partner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<script src="script.js" defer></script>
+</head>
+<body class="home">
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="#" class="logo" aria-label="Noodle home">
+      <img src="images/Content.svg" alt="Noodle" />
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#">Home</a>
+
+      <div class="nav-item has-dropdown">
+        <button type="button" class="nav-link" aria-haspopup="true" aria-expanded="false">Solutions</button>
+        <div class="nav-dropdown" role="menu">
+          <a href="#" role="menuitem">Strategy &amp; Intelligence</a>
+          <a href="#" role="menuitem">Marketing</a>
+          <a href="#" role="menuitem">Enrollment</a>
+          <a href="#" role="menuitem">Learning Design</a>
+          <a href="#" role="menuitem">Student Support &amp; Retention</a>
+          <a href="#" role="menuitem">Placement Management</a>
+          <a href="#" role="menuitem">Workforce</a>
+          <a href="#" role="menuitem">Lifelong Learning</a>
+          <a href="#" role="menuitem">Technology</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown">
+        <button type="button" class="nav-link" aria-haspopup="true" aria-expanded="false">Insights</button>
+        <div class="nav-dropdown" role="menu">
+          <a href="#" role="menuitem">Blog</a>
+          <a href="#" role="menuitem">Results</a>
+          <a href="#" role="menuitem">Showcases</a>
+          <a href="#" role="menuitem">Newsletter</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown">
+        <button type="button" class="nav-link" aria-haspopup="true" aria-expanded="false">About</button>
+        <div class="nav-dropdown" role="menu">
+          <a href="#" role="menuitem">Noodle</a>
+          <a href="#" role="menuitem">Careers &amp; Culture</a>
+          <a href="#" role="menuitem">Events</a>
+          <a href="#" role="menuitem">News</a>
+        </div>
+      </div>
+
+      <button type="button" class="nav-search" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+          <path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </nav>
+    <a href="#contact" class="btn btn-outline nav-cta">Get in Touch</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-header">
+    <a href="#" class="logo" aria-label="Noodle home"><img src="images/Content.svg" alt="Noodle" /></a>
+    <button class="mobile-menu-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <nav class="mobile-menu-list" aria-label="Mobile primary">
+    <a href="#" class="mm-item">Home</a>
+
+    <div class="mm-item mm-has-sub" data-mm-sub>
+      <button type="button" class="mm-toggle" aria-expanded="false">
+        <span>Solutions</span>
+        <svg class="mm-chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="mm-sublist">
+        <div class="mm-sublist-inner">
+          <a href="#">Strategy &amp; Intelligence</a>
+          <a href="#">Marketing</a>
+          <a href="#">Enrollment</a>
+          <a href="#">Learning Design</a>
+          <a href="#">Student Support &amp; Retention</a>
+          <a href="#">Placement Management</a>
+          <a href="#">Workforce</a>
+          <a href="#">Lifelong Learning</a>
+          <a href="#">Technology</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mm-item mm-has-sub" data-mm-sub>
+      <button type="button" class="mm-toggle" aria-expanded="false">
+        <span>Insights</span>
+        <svg class="mm-chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="mm-sublist">
+        <div class="mm-sublist-inner">
+          <a href="#">Blog</a>
+          <a href="#">Results</a>
+          <a href="#">Showcases</a>
+          <a href="#">Newsletter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mm-item mm-has-sub" data-mm-sub>
+      <button type="button" class="mm-toggle" aria-expanded="false">
+        <span>About</span>
+        <svg class="mm-chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="mm-sublist">
+        <div class="mm-sublist-inner">
+          <a href="#">Noodle</a>
+          <a href="#">Careers &amp; Culture</a>
+          <a href="#">Events</a>
+          <a href="#">News</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mm-item mm-search">
+      <input type="search" class="mm-search-input" placeholder="Search" aria-label="Search" />
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+        <path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="mm-cta-wrap">
+      <a href="#contact" class="btn btn-outline mm-cta">Get in Touch</a>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="n-hero">
+    <div class="n-hero-inner">
+      <h1 class="n-hero-title">
+        <span class="hero-line">Noodle helps higher education</span>
+        <span class="hero-line"><span class="n-hero-emph">grow and innovate<svg class="n-hero-doodle" viewBox="0 0 670 100" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g clip-path="url(#hero-doodle-clip)"><path d="M258.834 93.6712C249.043 93.5498 239.106 94.2008 229.042 94.0533C218.978 93.9058 209.336 92.739 199.272 92.546C189.141 92.3521 179.075 92.3412 169.058 92.0577C159.041 91.7742 148.831 92.399 138.816 91.9334C128.802 91.4678 118.683 90.2268 108.671 89.5335C98.6591 88.8402 88.534 88.1 78.5492 87.0656C68.5644 86.0312 58.4399 85.2455 48.5063 83.7563C42.2097 82.8131 31.767 80.1338 22.1321 76.5993C12.4971 73.0648 3.24421 68.1007 0.830907 60.6942C-1.09923 54.728 1.14743 48.0168 7.71759 41.5868C12.6049 36.7979 19.1095 33.8277 25.2864 31.5592C25.9957 31.2948 26.9023 31.6476 27.6115 31.3831C23.3192 32.2634 19.2261 33.6015 15.1342 34.8485C13.854 35.2424 12.7394 35.1376 11.6858 35.6254C10.884 36.0025 10.3023 36.997 9.29538 37.3944C7.57888 38.0789 6.04857 36.6028 5.36385 34.8868C4.67914 33.1708 4.77425 31.009 6.49075 30.3245C7.36053 29.971 8.1142 29.7982 8.80153 29.4652C9.99263 28.9108 11.4488 29.0199 13.1861 28.4951C26.8112 24.2926 41.4174 21.7871 55.7177 20.0746C59.6406 19.5996 63.6231 19.8311 67.4097 19.3316C76.9451 18.0382 86.1193 16.4899 95.1048 15.4629C104.66 14.3746 113.935 13.8749 122.964 13.0761C132.493 12.2379 141.711 10.8951 150.781 10.37C162.586 9.69667 173.705 9.26528 184.302 8.71359C196.06 8.10799 207.176 7.92701 217.84 7.46721C229.438 6.97346 240.515 6.24558 251.359 5.90187C262.705 5.54159 273.77 5.72426 284.909 5.5208C296.048 5.31733 306.989 4.54223 318.445 4.45653C328.694 4.37864 339.052 4.75744 349.459 4.74982C359.867 4.7422 370.077 4.14018 380.483 4.22361C390.753 4.30535 401.11 4.75243 411.515 4.97245C421.919 5.19246 432.133 6.13866 442.513 6.49498C452.894 6.85129 463.136 7.3425 473.514 7.88092C483.892 8.41935 494.16 8.66043 504.49 9.40317C514.82 10.1459 525.131 10.5697 535.458 11.54C545.785 12.5104 556.068 13.3664 566.347 14.5866C577.012 15.8571 588.06 17.4512 599.289 19.1613C610.518 20.8714 620.892 23.5954 631.816 26.0075C637.653 27.2865 647.858 28.9611 655.928 33.774C663.592 38.3313 669.472 45.3027 669.225 54.2699C669.061 60.1418 665.149 74.3684 633.841 81.3115C622.331 83.8554 610.666 86.1469 598.741 87.3196C586.815 88.4923 575.154 88.5982 563.167 89.2238C552.024 89.8142 540.804 91.0412 529.411 91.5375C518.018 92.0338 506.998 91.8289 495.607 92.2114C484.215 92.5939 473.217 92.4803 461.804 92.7715C450.39 93.0626 439.448 93.9515 428.013 94.1513C416.579 94.3511 405.641 94.8303 394.207 94.9618C382.773 95.0933 371.84 95.2538 360.384 95.3167C348.928 95.3797 338.01 94.3109 326.555 94.2828C315.101 94.2546 304.187 94.6203 292.733 94.5466C281.279 94.473 270.355 93.8595 258.925 93.7178L258.834 93.6712ZM334.319 15.4449C323.64 15.3126 312.858 16.1124 301.902 16.2271C290.947 16.3418 280.481 15.5518 269.478 15.8253C258.475 16.0987 248.129 16.6307 237.079 16.9719C226.03 17.3131 215.788 18.6433 204.716 19.0069C191.843 19.4394 178.524 19.206 164.695 19.6493C156.47 19.9117 148.055 20.8319 139.916 21.5734C131.936 22.3169 123.699 23.5809 115.542 23.8668C105.016 24.2373 95.1103 24.2056 85.7832 25.2283C75.3387 26.3739 65.6802 28.4171 56.4548 30.4201C46.3617 32.6173 36.9881 35.5519 27.9516 38.855C21.6375 41.1673 16.895 43.4536 13.1603 47.1184C8.54953 51.6374 6.38762 55.1851 7.46188 58.5452C10.2257 67.0716 30.6429 73.449 49.6235 76.3025C59.4888 77.7908 69.3501 79.5978 79.3574 80.6553C89.3647 81.7127 99.3144 81.9044 109.349 82.6207C119.383 83.337 129.224 84.916 139.284 85.3822C149.345 85.8484 159.306 85.0612 169.369 85.3452C179.431 85.6293 189.333 86.0025 199.397 86.1955C210.576 86.4251 221.564 87.3353 232.425 87.5155C243.604 87.6996 254.634 87.0849 265.473 87.1965C276.312 87.3081 287.666 88.1318 298.505 88.1978C309.345 88.2638 320.713 87.9038 331.554 87.9016C342.394 87.8993 353.753 88.3133 364.593 88.2655C375.434 88.2177 386.762 87.4702 397.627 87.3316C408.491 87.1931 419.81 87.2195 430.652 87.0351C441.495 86.8507 452.835 86.9457 463.701 86.6706C474.568 86.3955 485.849 85.7384 496.716 85.3722C507.584 85.006 518.879 85.0322 529.748 84.5749C540.616 84.1177 551.836 82.9362 562.706 82.3651C574.533 81.7376 586.242 81.4729 597.711 80.3401C609.18 79.2072 620.937 76.9168 632.241 74.4387C646.559 71.2694 661.877 64.6063 662.167 54.0686C662.566 40.2538 638.103 33.2571 630.517 31.5694C619.73 29.1817 608.846 27.2027 598.117 25.5671C587.388 23.9315 575.991 22.8796 565.417 21.6102C554.548 20.3143 543.602 19.5867 532.729 18.5868C521.856 17.5869 510.887 16.9501 499.987 16.2003C489.043 15.45 478.122 14.6088 467.242 14.087C456.272 13.564 445.357 12.2676 434.475 11.9278C423.594 11.588 412.515 12.4525 401.631 12.2721C390.748 12.0917 379.688 11.4765 368.825 11.4102C369.319 12.031 369.424 12.7153 369.391 13.5573C369.322 15.4006 367.865 17.2495 366.066 17.2272C355.527 16.8006 344.953 15.5767 334.296 15.4446L334.319 15.4449Z" fill="#0B7EA2"/></g><defs><clipPath id="hero-doodle-clip"><rect width="668.582" height="90.9709" fill="white" transform="translate(1.12731) rotate(0.710025)"/></clipPath></defs></svg></span> with the right mix</span>
+        <span class="hero-line">of people, process, and technology.</span>
+      </h1>
+      <p class="n-hero-sub">
+        Noodle works with what you already have, fills the gaps where needed, and scales with your
+        institution. Explore solutions from strategy to lifelong learning and find the right fit.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTIONS CAROUSEL ============ -->
+  <section class="n-solutions" aria-label="Solutions">
+    <div class="n-solutions-track" data-carousel>
+      <article class="sol-card sol-card--strategy">
+        <div class="sol-art">
+          <img src="Assets/Global%20Elements/Service%20cards/Card%20Image%20-%20Strategy%20%26%20Intelligence.webp" alt="Strategy & Intelligence" />
+        </div>
+        <div class="sol-body">
+          <p class="sol-eyebrow">Noodle for</p>
+          <h3 class="sol-title" style="color:#C3522A">Strategy &amp; Intelligence</h3>
+        </div>
+      </article>
+
+      <article class="sol-card sol-card--marketing">
+        <div class="sol-art">
+          <img src="Assets/Global%20Elements/Service%20cards/Card%20Image%20-%20Marketing.webp" alt="Marketing" />
+        </div>
+        <div class="sol-body">
+          <p class="sol-eyebrow">Noodle for</p>
+          <h3 class="sol-title" style="color:#AA2D49">Marketing</h3>
+        </div>
+      </article>
+
+      <article class="sol-card sol-card--enrollment">
+        <div class="sol-art">
+          <img src="Assets/Global%20Elements/Service%20cards/Card%20Image%20-%20Enrollment.webp" alt="Enrollment" />
+        </div>
+        <div class="sol-body">
+          <p class="sol-eyebrow">Noodle for</p>
+          <h3 class="sol-title" style="color:#2F4B7C">Enrollment</h3>
+        </div>
+      </article>
+
+      <article class="sol-card sol-card--learning">
+        <div class="sol-art">
+          <img src="Assets/Global%20Elements/Service%20cards/Card%20Image%20-%20Learning%20Design.webp" alt="Learning Design" />
+        </div>
+        <div class="sol-body">
+          <p class="sol-eyebrow">Noodle for</p>
+          <h3 class="sol-title" style="color:#8B2F6B">Learning Design</h3>
+        </div>
+      </article>
+
+      <article class="sol-card sol-card--support">
+        <div class="sol-art">
+          <img src="Assets/Global%20Elements/Service%20cards/Card%20Image%20-%20Student%20Support%20%26%20Retention.webp" alt="Student Support & Retention" />
+        </div>
+        <div class="sol-body">
+          <p class="sol-eyebrow">Noodle for</p>
+          <h3 class="sol-title" style="color:#118478">Student Support &amp; Retention</h3>
+        </div>
+      </article>
+
+      <article class="sol-card sol-card--placement">
+        <div class="sol-art">
+          <img src="Assets/Global%20Elements/Service%20cards/Card%20Image%20-%20Placement%20Management.webp" alt="Placement Management" />
+        </div>
+        <div class="sol-body">
+          <p class="sol-eyebrow">Noodle for</p>
+          <h3 class="sol-title" style="color:#D97757">Placement Management</h3>
+        </div>
+      </article>
+
+      <article class="sol-card sol-card--workforce">
+        <div class="sol-art">
+          <img src="Assets/Global%20Elements/Service%20cards/Card%20Image%20-%20Workforce.webp" alt="Workforce" />
+        </div>
+        <div class="sol-body">
+          <p class="sol-eyebrow">Noodle for</p>
+          <h3 class="sol-title" style="color:#5B7C2F">Workforce</h3>
+        </div>
+      </article>
+
+      <article class="sol-card sol-card--lifelong">
+        <div class="sol-art">
+          <img src="Assets/Global%20Elements/Service%20cards/Card%20Image%20-%20Lifelong%20Learning.webp" alt="Lifelong Learning" />
+        </div>
+        <div class="sol-body">
+          <p class="sol-eyebrow">Noodle for</p>
+          <h3 class="sol-title" style="color:#7B4B94">Lifelong Learning</h3>
+        </div>
+      </article>
+
+      <article class="sol-card sol-card--tech">
+        <div class="sol-art">
+          <img src="Assets/Global%20Elements/Service%20cards/Card%20Image%20-%20Technology.webp" alt="Technology" />
+        </div>
+        <div class="sol-body">
+          <p class="sol-eyebrow">Noodle for</p>
+          <h3 class="sol-title" style="color:#0B7EA2">Technology</h3>
+        </div>
+      </article>
+    </div>
+
+    <div class="carousel-controls" aria-hidden="false">
+      <button type="button" class="c-arrow" data-scroll="prev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="c-arrow" data-scroll="next" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ ONE MODEL ============ -->
+  <section class="n-model">
+    <div class="n-model-inner">
+      <div class="n-model-text">
+        <h2 class="n-model-title">One Model, Built Into Every Solution</h2>
+        <p class="n-model-sub">
+          Most partners hand you a team, a tool, or a plan. Noodle builds all three together, so they
+          reinforce each other instead of operating in separate lanes. We build our model to adapt to
+          your institution, not the other way around. Whether you need a precision tool or an end-to-end
+          partnership, our people, process, and technology connect to help you achieve your goals faster.
+        </p>
+      </div>
+
+      <div class="n-model-grid">
+        <div class="model-col">
+          <img class="model-icon-img" src="Assets/Home%20page/Icon/People.webp" alt="" aria-hidden="true" />
+          <div class="model-col-text">
+            <h3>People</h3>
+            <p>Dedicated specialists, embedded in your daily operations—not a rotating roster.</p>
+          </div>
+        </div>
+        <div class="model-col">
+          <img class="model-icon-img" src="Assets/Home%20page/Icon/Process.webp" alt="" aria-hidden="true" />
+          <div class="model-col-text">
+            <h3>Process</h3>
+            <p>Fluid, structured workflows that carry momentum across the entire learner journey.</p>
+          </div>
+        </div>
+        <div class="model-col">
+          <img class="model-icon-img" src="Assets/Home%20page/Icon/Technology.webp" alt="" aria-hidden="true" />
+          <div class="model-col-text">
+            <h3>Technology</h3>
+            <p>AI-enabled systems that replace manual busywork with seamless student experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="n-products">
+    <div class="n-products-inner">
+      <div class="prod-copy">
+        <p class="prod-eyebrow">OUR PRODUCTS</p>
+        <h2>Technology Built<br>for the Work</h2>
+        <p class="prod-body">
+          Noodle's technology integrates seamlessly with your existing systems and staff. It reduces
+          your workload behind the scenes while improving the student experience. Dedicated Assistants
+          support each service line, delivering 24/7 help to students and quietly handling
+          time-consuming tasks for your team.
+        </p>
+        <p class="prod-body">
+          Each tool runs on the same model as our services, just packaged for teams that want a
+          single capability rather than a full engagement.
+        </p>
+      </div>
+
+      <div class="prod-column">
+        <div class="prod-card">
+          <div class="prod-mockup">
+            <img src="Assets/Home%20page/Tuition%20Cost%20Estimator%20Preview.webp" alt="Noodle Tuition Assistant preview" />
+          </div>
+          <div class="prod-card-copy">
+            <p class="prod-card-eyebrow">BRING PROSPECTS IN</p>
+            <h3 class="prod-card-title">Noodle Tuition Assistant</h3>
+            <p class="prod-card-body">Gives prospective families a clear, personalized answer on what they'll pay, before they apply.</p>
+          </div>
+          <a href="#" class="prod-learn">Learn More</a>
+        </div>
+        <div class="prod-controls">
+          <div class="carousel-dots" aria-hidden="true">
+            <span class="dot is-active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="c-arrow" aria-label="Previous product">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="c-arrow" aria-label="Next product">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSIGHTS ============ -->
+  <section class="n-insights">
+    <div class="n-insights-inner">
+      <div class="n-insights-head">
+        <h2>Discover Insights. See Results.<br>Join the Conversation.</h2>
+        <p>See what we're learning, what's working, and where to find us next.</p>
+      </div>
+
+      <div class="insights-grid">
+        <a href="#" class="ins-card">
+          <img class="ins-thumb" src="Assets/Home%20page/Insights/Team%20Meeting.webp" alt="" />
+          <div class="ins-body">
+            <h3>Stay Ahead of the Curve</h3>
+            <p>Research and analysis on what's changing in higher education.</p>
+            <span class="ins-link">View Insights <span class="arrow">›</span></span>
+          </div>
+        </a>
+        <a href="#" class="ins-card">
+          <img class="ins-thumb" src="Assets/Home%20page/Insights/Marketing%20Collage.webp" alt="" />
+          <div class="ins-body">
+            <h3>See the Impact</h3>
+            <p>Case studies on how our partnerships drive outcomes for students and institutions.</p>
+            <span class="ins-link">View Results <span class="arrow">›</span></span>
+          </div>
+        </a>
+        <a href="#" class="ins-card">
+          <img class="ins-thumb" src="Assets/Home%20page/Insights/Conference%20Keynote.webp" alt="" />
+          <div class="ins-body">
+            <h3>Find Us on the Road</h3>
+            <p>Where to catch Noodle next, from conferences to webinars.</p>
+            <span class="ins-link">View Events <span class="arrow">›</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST ============ -->
+  <section class="n-trust">
+    <div class="n-trust-inner">
+      <div class="trust-head">
+        <h2>Trusted by Institutions Worldwide</h2>
+        <a href="#" class="btn btn-teal-pill">Explore Our Partnerships</a>
+      </div>
+      <div class="trust-marquee" aria-hidden="true">
+        <div class="trust-marquee-track">
+          <img class="trust-logo" src="Assets/Home%20page/Logos/American%20University.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/University%20of%20Tennessee.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/Columbia%20University.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/LSE.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/University%20of%20Pittsburgh.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/New%20York%20University.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/University%20of%20Oxford.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/VCU.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/American%20University.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/University%20of%20Tennessee.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/Columbia%20University.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/LSE.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/University%20of%20Pittsburgh.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/New%20York%20University.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/University%20of%20Oxford.webp" alt="" />
+          <img class="trust-logo" src="Assets/Home%20page/Logos/VCU.webp" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="n-final-cta">
+    <div class="n-final-inner">
+      <h2>See the Service Built for <span class="cta-underline-wrap">What's Next<svg class="cta-underline" viewBox="0 0 500 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6.07045 14.8946C9.28305 17.987 12.8798 21.283 17.7648 21.9869C24.7006 22.9967 34.1122 18.6039 39.5633 15.378C47.3411 10.7871 58.4202 6.70183 65.8232 11.6917C68.2631 13.3369 69.8399 15.7659 72.4954 17.1912C84.1862 23.4624 99.4339 4.81231 111.29 10.8639C114.947 12.7364 116.73 16.5329 120.536 18.1995C131.521 23.0369 145.762 6.47126 155.155 13.1904C156.743 14.333 157.7 15.9573 159.155 17.2236C165.259 22.5065 175.975 19.1481 183.573 15.3654C191.171 11.5964 201.452 7.7883 208.121 12.5898C210.143 14.0453 211.419 16.1197 213.425 17.5752C228.284 28.3348 242.408 4.13372 256.114 10.2046C259.035 11.5055 260.713 14.0983 263.187 15.8938C269.555 20.5325 279.629 19.0243 287.196 15.7891C295.445 12.2635 305.402 6.85577 315.386 7.53748C327.719 8.37316 331.302 19.8115 345.17 17.2056C349.781 16.3371 353.989 14.4576 358.163 12.6467C362.071 10.9465 366.379 9.25818 370.731 9.88237C378.617 11.0111 379.048 18.0978 384.94 20.4532C393.752 23.9728 402.951 12.6566 412.407 14.7775C418.161 16.0661 421.54 19.0346 428.187 18.8961C434.835 18.7576 441.325 16.7998 447.079 14.243C451.652 12.2114 456.806 9.73943 461.695 11.196C464.564 12.0456 466.623 14.103 469.194 15.4739C476.827 19.5323 487.444 16.5712 493.903 11.3018" stroke="#0B7EA2" stroke-width="7.55" stroke-linecap="round" stroke-linejoin="round"/></svg></span></h2>
+      <p>Every institution's pressure looks a little different. See the Noodle service built to relieve yours.</p>
+      <a href="#" class="btn btn-teal-pill">Let's talk</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer n-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <div class="footer-links">
+        <div class="footer-brand">
+          <img src="images/Content.svg" alt="Noodle" class="footer-logo" />
+        </div>
+
+        <div class="footer-col">
+          <h4>Work With Us</h4>
+          <ul>
+            <li><a href="#">Strategy &amp; Intelligence</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Enrollment</a></li>
+            <li><a href="#">Learning Design</a></li>
+            <li><a href="#">Student Support &amp; Retention</a></li>
+            <li><a href="#">Placement Management</a></li>
+            <li><a href="#">Workforce</a></li>
+            <li><a href="#">Lifelong Learning</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Noodle With Us</h4>
+          <ul>
+            <li><a href="#">Insights</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Resources for Learners</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get to Know Us</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Careers &amp; Culture</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-subscribe">
+          <h4>Subscribe</h4>
+          <p>Join our content community for the latest expert insights, innovative strategies, and emerging trends in higher education.</p>
+          <form class="subscribe-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed';">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-outline">Submit</button>
+          </form>
+          <p class="fine-print">
+            By subscribing you agree to our <a href="#">Privacy Policy</a> and provide consent
+            to receive updates from our company.
+          </p>
+        </div>
+
+        <div class="footer-badges">
+          <img src="images/b_corp.png" alt="Certified B Corporation" class="badge-bcorp" />
+          <div class="contact-bubble" aria-hidden="true">contact</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <div class="footer-credits">
+        <span>© 2026 Noodle. All rights reserved.</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Do Not Sell or Share My Info</a>
+      </div>
+      <div class="social" aria-label="Social">
+        <a href="#" aria-label="Facebook"><img src="images/icon_facebook.svg" alt=""></a>
+        <a href="#" aria-label="Instagram"><img src="images/icon_instagram.svg" alt=""></a>
+        <a href="#" aria-label="X"><img src="images/icon_twitter.svg" alt=""></a>
+        <a href="#" aria-label="LinkedIn"><img src="images/icon_linkedin.svg" alt=""></a>
+        <a href="#" aria-label="YouTube"><img src="images/icon_youtube.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
